@@ -9,13 +9,12 @@ export default class Comp extends React.Component {
             word: ['me', 'react', 'you'],
             curr: 0,
         }
-        this.upgradeWord = this.upgradeWord.bind(this)
     }
 
-    upgradeWord() {
-        const v = this.state.curr === this.state.word.length - 1 ? 0 : this.state.curr + 1
+    upgradeWord = () => {
+        const curr = this.state.curr === this.state.word.length - 1 ? 0 : this.state.curr + 1
         this.setState({
-            curr: v
+            curr
         })
     }
 
