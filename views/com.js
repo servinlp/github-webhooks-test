@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import ReactDOM from 'react-dom'
 import _ from 'lodash'
 
 export default class Comp extends React.Component {
